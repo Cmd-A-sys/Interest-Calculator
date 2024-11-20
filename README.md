@@ -6,26 +6,6 @@ This Python project calculates **Simple Interest (SI)** and **Compound Interest 
 
 ## Features
 
-- **Simple Interest Calculation**  
-  Formula:  
-  \[
-  SI = \frac{P \times R \times T}{100}
-  \]  
-  where:  
-  - \( P \): Principal amount  
-  - \( R \): Annual interest rate (%)  
-  - \( T \): Time period (in years)  
-
-- **Compound Interest Calculation**  
-  Formula:  
-  \[
-  CI = P \times (1 + \frac{R}{100})^T - P
-  \]  
-  where:  
-  - \( P \): Principal amount  
-  - \( R \): Annual interest rate (%)  
-  - \( T \): Time period (in years)  
-
 - User-friendly interface for entering data.
 - Error handling for invalid inputs.
 
@@ -39,3 +19,12 @@ This Python project calculates **Simple Interest (SI)** and **Compound Interest 
    ```bash
    git clone https://github.com/your-username/Interest-Calculator.git
    cd Interest-Calculator
+   
+2. Run the script:
+python main.py
+
+3. Follow the instructions in the terminal:
+- Enter the principal amount.
+- Enter the interest rate and time period.
+- Choose between Simple Interest or Compound Interest calculation.
+
