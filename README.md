@@ -17,7 +17,7 @@ This Python project calculates **Simple Interest (SI)** and **Compound Interest 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/Interest-Calculator.git
+   git clone https://github.com/Cmd-A-sys/Interest-Calculator.git
    cd Interest-Calculator
    
 2. Run the script:
