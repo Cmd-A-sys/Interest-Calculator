@@ -6,6 +6,9 @@ def type():
             return 'compound'
         elif investment_type == '2':
             return 'simple'
+        else:
+            print("Please enter only 1 or 2")
+            return type()
     except ValueError:
         print("Please enter only 1 or 2")
         type()
@@ -41,11 +44,11 @@ am = amount()
 cu = currencies()
 ty = type()
 pe = percent()
-def compound(pe,am,cu):
+def compound(am,cu,pe):
     i = 0
     multiplier = 1+(pe/100)
-    years = float(input("How many years do you plan on keeping this investment: "))
-    year_mult = multiplier ** years
+    years = int(input("How many years do you plan on keeping this investment: "))
+    year_mult = float(multiplier ** years)
     value_final = am * year_mult
     print("Your investment will be worth {:.2f}{} at the end of the term".format(value_final,cu))
     restart = (input("Click 'm' to restart or Enter to quit\n"))
@@ -60,7 +63,7 @@ def compound(pe,am,cu):
     elif restart == "":
         print("Finished")
         quit()
-def simple(pe,am,cu):
+def simple(am,cu,pe):
     years = float(input("How many years do you plan on keeping this investment: "))
     multiplier = pe / 100
     total = am + (am*years*multiplier)
